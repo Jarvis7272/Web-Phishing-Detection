@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Attachment-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!--Header starts -->
+    <header class="header" id="home">
+        <h1 class="logo"><a href="#">Phishing</a></h1>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#try">Take a try</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </header>
+
+    <section class="about">
+        <div class="main">
+            <div class="about-text">
+                <h1>Solution for web phishing attacks</h1>
+                <p>Be aware of phishing websites which are stealing your important credentials and information.
+                </p>
+                <button type="button"><a href="{{ url_for('Final') }}">Check URL</a></button>
+
+            </div>
+            <img src="{{ url_for('static', filename='images/phishing.png') }}" alt="Personal Image">
+        </div>
+    </section>
+    <!--Header ends -->
+
+    <!--About starts -->
+    <div class="container" id="about">
+        <h2 class="title" id="h2">About</h2>
+        <div class="text-area">
+            <div class="text1">
+                <br><br><b>MACHINE LEARNING</b><br>
+                <p>
+                    Machine learning is a subset of artificial intelligence (AI) in which algorithms learn by example
+                    from historical data to predict outcomes and uncover patterns not easily spotted by humans. For
+                    example, machine learning can reveal customers who are likely to churn, likely fraudulent insurance
+                    claims, and more. While machine learning has been around since the 1950s, recent breakthroughs in
+                    low-cost compute resources like cloud storage, easier data collection, and the proliferation of data
+                    science have made it very much “the next big thing” in business analytics.Machine learning is a
+                    powerful tool used to strive against phishing attacks.
+                </p>
+                <p>
+                    To put it simply, the machine learning algorithm learns by example, and then users apply those
+                    self-learning algorithms to uncover insights, determine relationships, and make predictions about
+                    future trends. Machine learning has practical implications across industry sectors, including
+                    healthcare, insurance, energy, marketing, manufacturing, financial technology (fintech), and more.
+                    When implemented effectively, machine learning allows businesses to uncover optimal solutions to
+                    practical problems, which leads to real, tangible business value.
+                </p>
+                <p>Machine learning approaches are traditionally divided into three broad categories, which correspond
+                    to learning paradigms, depending on the nature of the "signal" or "feedback" available to the
+                    learning system: <br>
+                    1.Supervised learning <br>
+                    2. Unsupervised learning <br>
+                    3. Reinforcement learning
+                </p>
+                <p>
+                    Performing machine learning involves creating a model, which is trained on some training data and
+                    then can process additional data to make predictions. Various types of models have been used and
+                    researched for machine learning systems.Typically, machine learning models require a high quantity
+                    of reliable data in order for the models to perform accurate predictions. When training a machine
+                    learning model, machine learning engineers need to target and collect a large and representative
+                    sample of data.
+                </p>
+                <p>
+                    Trained models derived from biased or non-evaluated data can result in skewed or undesired
+                    predictions. Machine learning ethics is becoming a field of study and notably be integrated within
+                    machine learning
+                    engineering teams.
+                </p>
+
+                <p>Phishing is popular since it is a low effort, high reward attack. Most modern web browsers, antivirus
+                    software and email clients are pretty good at detecting phishing websites at the source, helping to
+                    prevent attacks. To understand how they work, this blog post will walk you through a tutorial that
+                    shows you how to build your own phishing URL detector using Python and machine learning
+                </p>
+            </div>
+            <div class="text2">
+                <br><br><b>PHISHING</b><br>
+                <p>Phishing attacks are one of the most common form of social engineering attacks. In a web-based
+                    phishing attack, attackers use web pages visually mimicking legitimate web sites, such as banking
+                    and government services, to deceive the victims to input their sensitive information (e.g., bank
+                    accounts and social security number). Though phishing attacks do not require advanced technical
+                    knowledge and these attack techniques are becoming familiar to users, they are still causing major
+                    financial damages.
+                </p>
+                <p><b>Types of phishing:</b><br>
+                    <b>1.Email phishing</b><br>
+                    Most phishing messages are delivered by email spam, and are not personalized or targeted to a
+                    specific individual or company-this is termed "bulk" phishing.[11] The content of a bulk phishing
+                    message varies widely depending on the goal of the attacker-common targets for impersonation include
+                    banks and financial services, email and cloud productivity providers, and streaming services.
+
+                    <br><br><b>2.Spear phishing</b><br>
+                    Spear phishing involves an attacker directly targeting a specific organization or person with
+                    tailored phishing communications.[14] This is essentially the creation and sending of emails to a
+                    particular person to make the person think the email is legitimate. 
+
+                    <br><br><b>3.Clone phishing</b><br>
+                    Clone phishing is a type of phishing attack whereby a legitimate, and previously delivered email
+                    containing an attachment or link has had its content and recipient address(es) taken and used to
+                    create an almost identical or cloned email.
+
+                    <br><br><b>4.Clone phishing</b><br>
+                    Voice phishing, or vishing,[29] is the use of telephony (often Voice over IP telephony) to conduct
+                    phishing attacks. Attackers will dial a large quantity of telephone numbers and play automated
+                    recordings - often made using text-to-speech synthesizers - that make false claims of fraudulent
+                    activity on the victim's bank accounts or credit cards.
+
+                    <br><br><b>5.Page hijacking</b><br>
+                    Page hijacking involves compromising legitimate web pages in order to redirect users to a malicious
+                    website or an exploit kit via cross site scripting. A hacker may compromise a website and insert an
+                    exploit kit such as MPack in order to compromise legitimate users who visit the now compromised web
+                    server.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--About ends -->
+
+    <!--Phishing starts -->
+
+
+    <div class="cover" id="try">
+        <div class="area1">
+            <h2 class="title1">Your safety your prediction</h2>
+            <p class="text3">For the protection of your credentials, information & such things why don't you try it
+                once.<br>
+            </p>
+        </div>
+        <button type="button"><a href="{{ url_for('Final') }}">Check your website</a></button>
+    </div>
+    <!--Phishing ends -->
+
+    <!--Contact starts -->
+    <div class="container1" id="contact">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    A team of 4 members created this web phishing detection for creating awareness & protecting
+                    credentials, information & many more from malicious websites.
+                </p>
+
+                <div class="info">
+                    <div class="h3">Connect with us:</div>
+                    <div class="information">
+                        <p><a href="https://www.instagram.com/tagim07/">Asibul Hasan</a></p>
+                    </div>
+                    <div class="information">
+                        <p><a href="https://www.instagram.com/___jarvis_/">MD Hasan Raja</a></p>
+                    </div>
+                    <div class="information">
+                        <p><a href="https://www.instagram.com/junaidalamkuraishi/">Junaid Alam Qureshi</a></p>
+                    </div>
+                    <div class="information">
+                        <p><a href="https://www.instagram.com/mhk_rakib/">Muzakkir Hossen Khan</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form">
+
+                <form action="/RecievedData" method="POST">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" id="USERNAME" name="USERNAME" class="input" placeholder="Username" />
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" id="EMAIL" name="EMAIL" class="input" placeholder="Email" />
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" id="MOBILE" name="MOBILE" class="input" placeholder="Phone" />
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea id="MESSAGE" name="MESSAGE" class="input" placeholder="Message"></textarea>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" class="btn1" name="action" value="Send" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Contact ends -->
+
+</body>
+
+<!--Script starts -->
+
+
+<!--Script ends -->
+
+</html>
